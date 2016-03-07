@@ -1,5 +1,5 @@
-* # Sonnet no. 83
-* *by William Shakespeare*
+># Sonnet no. 83
+>*by William Shakespeare*
 
 >I never saw that you did painting need,  
 >And therefore to your fair no painting set,  
