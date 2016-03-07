@@ -3,14 +3,15 @@
 	font-family: 'AlegreyaItalic';
 	font-style: italic;
 	font-weight: normal;
-	src:url('alegreya-v7-latin-regular.ttf') format("truetype"); /* Safari, Android, iOS */
+	src:url('alegreya-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+
 }
 
 @font-face{
 	font-family: 'Alegreya';
 	font-style: normal;
 	font-weight: normal;
-	src:url('alegreya-v7-latin-regular.ttf') format("truetype"); /* Safari, Android, iOS */
+	src:url('alegreya-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 	
 }
 
