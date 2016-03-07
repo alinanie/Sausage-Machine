@@ -92,8 +92,8 @@ h1,h2,h3,h4{
 h1{
     font-size:1.8em;
     margin-bottom: 0.5em;
-    color:#f54854;
-    border-bottom:5px dotted #f59348;
+    color: #d2a8d4;
+    border-bottom:5px dotted #d2a8d4;
     padding-bottom:6px;
     page-break-before: always;
 }
