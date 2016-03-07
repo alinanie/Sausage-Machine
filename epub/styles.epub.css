@@ -55,6 +55,7 @@
 body{
     font-size: 10pt;
     font-family: 'Alegreya';
+    background-color: #fdebdc;
     hyphens: none
     -webkit-hyphens:none;
 }
