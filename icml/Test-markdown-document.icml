@@ -29,14 +29,30 @@
           <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
         </Properties>
       </ParagraphStyle>
-      <ParagraphStyle Self="ParagraphStyle/Header1" Name="Header1" LeftIndent="0" PointSize="36">
+      <ParagraphStyle Self="ParagraphStyle/BulList" Name="BulList" BulletsAndNumberingListType="BulletList" LeftIndent="0">
         <Properties>
           <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          <TabList type="list">
+            <ListItem type="record">
+              <Alignment type="enumeration">LeftAlign</Alignment>
+              <AlignmentCharacter type="string">.</AlignmentCharacter>
+              <Leader type="string" />
+              <Position type="unit">10</Position>
+            </ListItem>
+          </TabList>
         </Properties>
       </ParagraphStyle>
-      <ParagraphStyle Self="ParagraphStyle/Paragraph" Name="Paragraph" LeftIndent="0">
+      <ParagraphStyle Self="ParagraphStyle/BulList &gt; first &gt; Header1" Name="BulList &gt; first &gt; Header1" BulletsAndNumberingListType="BulletList" LeftIndent="0" PointSize="36">
         <Properties>
           <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          <TabList type="list">
+            <ListItem type="record">
+              <Alignment type="enumeration">LeftAlign</Alignment>
+              <AlignmentCharacter type="string">.</AlignmentCharacter>
+              <Leader type="string" />
+              <Position type="unit">10</Position>
+            </ListItem>
+          </TabList>
         </Properties>
       </ParagraphStyle> 
     </RootParagraphStyleGroup>
@@ -54,12 +70,12 @@
     <StoryPreference OpticalMarginAlignment="true" OpticalMarginSize="12" />
 
 <!-- body needs to be non-indented, otherwise code blocks are indented too far -->
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first &gt; Header1" NumberingContinue="false">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>Sonnet no. 83</Content>
   </CharacterStyleRange><Br />
 </ParagraphStyleRange>
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
   <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
     <Content>by William Shakespeare</Content>
   </CharacterStyleRange><Br />
